@@ -21,7 +21,7 @@ export default class Signup extends Component  {
         e.preventDefault();
         const {username, email, password} = this.state;
         console.log(username, email, password);
-        fetch("http://localhost:5001/signup",{
+        fetch("https://taskserver-0fhp.onrender.com/signup",{
             method:"POST",
             crossDomain: true,
             headers:{
